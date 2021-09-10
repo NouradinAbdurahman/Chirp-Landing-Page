@@ -53,7 +53,7 @@ header .container {
     font-weight: bolder;
 }
 nav.active {
-    display: block;
+    display: block; 
 }
 header ul {
     display: flex;
@@ -70,6 +70,14 @@ header ul li a {
     padding: 10px;
     font-size: 16px;
 }
+header ul li a:hover {
+    color: #777;
+    transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+}
 .btn-twitter {
     padding: 5px 10px;
     display: flex;
@@ -84,6 +92,47 @@ header ul li a {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+nav .btn-twitter a:hover {
+    color: white;
+    transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+}
+nav .learn-more:hover {
+    color: black;
+    transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+}
+footer .footer-item ul li a:hover {
+    color: black;
+    transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+}
+.hero .hero-col-left .btn-twitter a:hover {
+    color: black;
+    transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+}
+
+.pricing .pricing-card-list  .btn-twitter a:hover {
+    color: black;
+    transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
 }
 
 .hero {
@@ -275,6 +324,7 @@ header ul li a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .customers-card-footer-date {
     text-transform: capitalize;
@@ -438,6 +488,9 @@ footer .footer-item ul li a {
     .hero-col-right {
         display: none;
     }
+    .hero-col-left p {
+        padding-right: unset;
+    }
     .hero-col-right-taplet {
         display: block;
     }
@@ -496,6 +549,12 @@ footer .footer-item ul li a {
         flex-direction: column;
         align-items: unset;
     }
+    footer .footer-item {
+        text-align: center;
+    }
+    .customers-title {
+        font-size: 1.7rem;
+    }
 }
 @media screen and (max-width: 370px) {
     .hero-col-left .hero-col-left-title-mobile {
@@ -521,5 +580,8 @@ footer .footer-item ul li a {
     }
     .pricing-p-mobile {
         display: block;
+    }
+    .customers-title {
+        font-size: 1.7rem;
     }
 } 
