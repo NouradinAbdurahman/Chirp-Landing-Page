@@ -32,6 +32,7 @@ a {
 }
 header {
     background-color: rgba(250, 233, 210, 0.342);
+    padding-top: 10px;
 }
 header .container {
     display: flex;
@@ -440,7 +441,6 @@ footer .footer-item ul li a {
     font-size: 15px;
 }
 @media screen and (max-width: 768px) {
-
     .open-mobile-menu {
         display: block;
         cursor: pointer;
@@ -459,6 +459,7 @@ footer .footer-item ul li a {
     }
     header {
         position: relative;
+        padding-top: 0px;
     }
     nav {
         display: none;
